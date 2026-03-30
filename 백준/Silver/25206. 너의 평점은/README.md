@@ -1,4 +1,4 @@
-# [Silver V] 너의 평점은 - 25206 
+# [Silver V] 너의 평점은 - 25206 (AI의 도움 받음)
 
 [문제 링크](https://www.acmicpc.net/problem/25206) 
 
@@ -79,3 +79,9 @@
 
 <p>정답과의 절대오차 또는 상대오차가 <mjx-container class="MathJax" jax="CHTML" style="font-size: 109%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.393em;"><mjx-texatom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-texatom></mjx-script></mjx-msup></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mn>10</mn><mrow data-mjx-texclass="ORD"><mo>−</mo><mn>4</mn></mrow></msup></math></mjx-assistive-mml><span aria-hidden="true" class="no-mathjax mjx-copytext">\(10^{-4}\)</span></mjx-container> 이하이면 정답으로 인정한다.</p>
 
+### AI 코드로 배운점, 반성할점
+1. 리스트 2개를 만들고 A:4.0으로 각각 인덱스를 매치 시키려고 시도함 -> 딕셔너리 형태를 망각하고 있었다는걸 깨달음
+2. 함수 선언할때 return 값에 따라 호출할때 타입이 정해진다는걸 배움.
+3. 3개씩 그룹화해서 보는 방법을 1,2,3 하나씩 다 보려고 함. range()도 제대로 활용하지 못함. range(a, b, c) a: 시작점, b:끝점, c:간격
+4. sys.stdin.readline()은 한줄씩만 입력. read()를 해야 여러줄이 입력됨. + split()으로 분리 가능함
+5. round를 활용했는데 print(f"{x}:.6f}")의 형식으로 round하는 방법을 배움.
